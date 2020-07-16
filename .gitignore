@@ -1,0 +1,4 @@
+/conf.d/
+data/*
+.idea
+docker-compose.yml

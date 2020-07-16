@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: steelblue;
+}
+table {
+    width: 100%;
+    max-width: 600px;
+    height: 320px;
+    border-collapse: collapse;
+    border: 1px solid #38678f;
+    margin: 50px auto;
+    background: white;
+}
+th {
+    background: steelblue;
+    height: 54px;
+    width: 25%;
+    font-weight: lighter;
+    text-shadow: 0 1px 0 #38678f;
+    color: white;
+    border: 1px solid #38678f;
+    box-shadow: inset 0 1px 2px #568ebd;
+}
+tr {
+    border-bottom: 1px solid #cccccc;
+}
+tr:last-child {
+    border-bottom: 0;
+}
+td {
+    border-right: 1px solid #cccccc;
+    padding: 10px;
+}
+td:last-child {
+    border-right: 0;
+}
+td.selected {
+    background: #d7e4ef;
+    z-index: 0;
+}
+td input {
+    font-size: 14px;
+    background: none;
+    outline: none;
+    padding: 5px;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+    display: table-cell;
+
+}
+td input:focus {
+    box-shadow: 0 1px 0 steelblue;
+    color: steelblue;
+}
+
+.table {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: float 5s infinite;
+}
+.push {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    border-radius: 24px;
+    border: 1px solid #38678f;
+    background: steelblue;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.2);
+    transition: all 0.1s;
+}
+.push:hover {
+    background: #4f8aba;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.push:active {
+    color: #294d6b;
+    background: #427aa9;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.create {
+    margin: 50px auto;
+    max-width: 400px;
+    width: 100%;
+}
+.docname{
+    display: inline-block;
+    text-decoration: none;
+    height: 38px;
+    padding: 0 10px;
+    border-radius: 24px;
+    border: 1px solid #38678f;
+    outline: none;
+}
+.push:focus {
+    outline: none;
+}
