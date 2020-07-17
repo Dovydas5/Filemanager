@@ -43,13 +43,14 @@ foreach ($files as $file){
     <title>Document</title>
 </head>
 <body>
-<form class="create" action="index.php" method="GET">
-    <input class="docname" placeholder="Name of new directory" type="text" id="create" name="create">
-    <button class="push" type="submit">Create Directory</button>
-    <button class="push"><a href="index.php"></a>HOME</button>
+    <form class="create" action="index.php" method="GET">
+        <input class="docname" placeholder="Name of new directory" type="text" id="create" name="create">
+        <button class="push" type="submit">Create Directory</button>
+        <button class="push"><a href="index.php"></a>HOME</button>
     <form class="create" action="index.php" method="GET">
         <input class="docname" placeholder="Name of new file" type="text" name="createfile">
         <button class="push" type="submit">Create File</button>
+    </form>
 </form>
 </body>
 </html>
