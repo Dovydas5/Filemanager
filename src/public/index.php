@@ -13,10 +13,17 @@ foreach ($files as $file){
                 echo "<td>File</td>";
             }
             echo ( '<td>' . "<a href='$file'> $file" . '</a></td>');
-            if(!is_dir($path . $files)){
-                echo '<td><form action="" method="POST"><input name="delete" type="submit" value="Delete"></form></td>';
+            if(is_dir($path . $file)){
+                echo '<td> </td>';
             }else{
-                echo "";
+                echo '<td><form id="actions" action="\" method="POST"><input name="delete" type="submit" value="Delete"></form><form id="actions" action="" method="post">
+                                <input type="hidden" name="download" value=\' . str_replace(\' \', \'&nbsp;\', $file) . \'>
+                                <input type="submit" value="Download">
+                               </form>
+                               </form><form id="actions" action="" method="post">
+                                <input type="hidden" name="upload" value=\' . str_replace(\' \', \'&nbsp;\', $file) . \'>
+                                <input type="submit" value="Upload">
+                               </form></td>';
             }
         }
 }
@@ -36,8 +43,11 @@ foreach ($files as $file){
 <body>
 <form class="create" action="index.php" method="GET">
     <input class="docname" placeholder="Name of new directory" type="text" id="create" name="create">
-    <button class="push" type="submit">Submit</button>
+    <button class="push" type="submit">Create Directory</button>
     <button class="push"><a href="index.php"></a>HOME</button>
+    <form class="create" action="index.php" method="GET">
+        <input class="docname" placeholder="Name of new file" type="text" name="createfile">
+        <button class="push" type="submit">Create File</button>
 
 </form>
 </body>

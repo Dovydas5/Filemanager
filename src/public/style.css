@@ -6,6 +6,7 @@
 body {
     background: steelblue;
 }
+
 table {
     width: 100%;
     max-width: 600px;
@@ -15,6 +16,7 @@ table {
     margin: 50px auto;
     background: white;
 }
+
 th {
     background: steelblue;
     height: 54px;
@@ -38,12 +40,9 @@ td {
 td:last-child {
     border-right: 0;
 }
-td.selected {
-    background: #d7e4ef;
-    z-index: 0;
-}
+
 td input {
-    font-size: 14px;
+    font-size: 12px;
     background: none;
     outline: none;
     padding: 5px;
@@ -60,6 +59,10 @@ td input:focus {
 .table {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     animation: float 5s infinite;
+}
+td > #actions {
+    display: inline-block;
+    margin-left: 2px;
 }
 .push {
     display: inline-block;
