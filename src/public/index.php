@@ -16,14 +16,16 @@ foreach ($files as $file){
             if(is_dir($path . $file)){
                 echo '<td> </td>';
             }else{
-                echo '<td><form id="actions" action="\" method="POST"><input name="delete" type="submit" value="Delete"></form><form id="actions" action="" method="post">
-                                <input type="hidden" name="download" value=\' . str_replace(\' \', \'&nbsp;\', $file) . \'>
-                                <input type="submit" value="Download">
-                               </form>
-                               </form><form id="actions" action="" method="post">
-                                <input type="hidden" name="upload" value=\' . str_replace(\' \', \'&nbsp;\', $file) . \'>
-                                <input type="submit" value="Upload">
-                               </form></td>';
+                echo '<td><form id="actions" action="\" method="POST">
+                        <input type="hidden" name="delete" value="">
+                        <input type="submit" value="Delete"></form>
+                        <form id="actions" action="\" method="POST">
+                        <input type="hidden" name="download" value="">
+                        <input type="submit" value="Download"></form>
+                        <form id="actions" action="\" method="POST">
+                        <input type="hidden" name="upload" value="">
+                        <input type="submit" value="Upload">
+                        </form></td>';
             }
         }
 }
@@ -48,7 +50,6 @@ foreach ($files as $file){
     <form class="create" action="index.php" method="GET">
         <input class="docname" placeholder="Name of new file" type="text" name="createfile">
         <button class="push" type="submit">Create File</button>
-
 </form>
 </body>
 </html>
