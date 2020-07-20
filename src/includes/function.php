@@ -11,11 +11,11 @@ function tableContent(array $files, ?string $path) : string
                 $content .= '<td colspan="2">'. '<i class="fa fa-folder"></i>' . '<a href="' . '?path=' . $path . '/' . $file . '">'. $file . '</a></td>';
             }else{
                 $content .= '<td>' . '<i class="fa fa-file-code-o"></i>'. $file . '</td>';
-                $content .= '<td><form id="actions" action="/?path=' . $path . '" method="POST">
+                $content .= '<td><form id="actions" action="/?path=' . $path . '" method="GET">
                         <input type="hidden" name="path" value="' . $path . '">
                         <input type="hidden" name="delete" value="' . $file . '">
                         <input type="submit" name="submit" value="Delete"></form>
-                        <form id="actions" action="\" method="POST">
+                        <form id="actions" action="\" method="GET">
                         <input type="hidden" name="download" value="">
                         <input type="submit" value="Download"></form>
                         </form></td>';
