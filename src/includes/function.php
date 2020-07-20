@@ -5,7 +5,7 @@ function tableContent(array $files, ?string $path) : string
 {
     $content = '';
     foreach ($files as $file){
-        if($file != '.' && $file != '..' && $file != '.DS_Store') {
+        if($file != '.' && $file != '..' && $file != '.DS_Store' && $file != 'index.php' && $file != 'style.css') {
             $content .= '<tr>';
             if(is_dir(INCLUDES_PATH . $path . '/' . $file)){
                 $content .= '<td colspan="2">'. '<i class="fa fa-folder"></i>' . '<a href="' . '?path=' . $path . '/' . $file . '">'. $file . '</a></td>';
