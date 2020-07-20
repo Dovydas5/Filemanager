@@ -1,2 +1,5 @@
 data/*
 .idea
+docker-compose.yml
+conf.d
+.DS_Store

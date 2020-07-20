@@ -1,9 +1,11 @@
 <?php
+require_once "../includes/delete.php";
+require_once "../includes/create.php";
 function tableContent(array $files, ?string $path) : string
 {
     $content = '';
     foreach ($files as $file){
-        if($file != '.' && $file != '..') {
+        if($file != '.' && $file != '..' && $file != '.DS_Store') {
             $content .= '<tr>';
             if(is_dir(INCLUDES_PATH . $path . '/' . $file)){
                 $content .= '<td colspan="2">'. '<i class="fa fa-folder"></i>' . '<a href="' . '?path=' . $path . '/' . $file . '">'. $file . '</a></td>';
