@@ -55,6 +55,9 @@ td input:focus {
     box-shadow: 0 1px 0 steelblue;
     color: steelblue;
 }
+.fa {
+    margin-right: 5px;
+}
 
 .table {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
