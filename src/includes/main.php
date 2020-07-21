@@ -4,6 +4,11 @@
     <?php echo tableContent($files, $path); ?>
 </table>
 <div class="nav">
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="file" name="upload" id="files" style="display:none;"/>
+        <label class="push" for="files">Choose file</label>
+        <button class="push" type="submit">Upload file</button>
+    </form>
     <a href="<?php echo trimLastDir($path)?>" class="button">Back</a>
     <a href="index.php" class="button">Home</a>
 </div>

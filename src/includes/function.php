@@ -2,6 +2,8 @@
 require_once "../includes/delete.php";
 require_once "../includes/create.php";
 require_once "../includes/download.php";
+require_once "../includes/auth.php";
+require_once "../includes/upload.php";
 function tableContent(array $files, ?string $path) : string
 {
     $content = '';
@@ -37,3 +39,4 @@ if(count($urlTrim) == 0){
 }
 return $currentPath;
 }
+
