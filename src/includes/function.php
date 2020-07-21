@@ -1,6 +1,7 @@
 <?php
 require_once "../includes/delete.php";
 require_once "../includes/create.php";
+require_once "../includes/download.php";
 function tableContent(array $files, ?string $path) : string
 {
     $content = '';
@@ -15,8 +16,8 @@ function tableContent(array $files, ?string $path) : string
                         <input type="hidden" name="path" value="' . $path . '">
                         <input type="hidden" name="delete" value="' . $file . '">
                         <input type="submit" name="submit" value="Delete"></form>
-                        <form id="actions" action="\" method="GET">
-                        <input type="hidden" name="download" value="">
+                        <form id="actions" action="/?path=' . $path . '" method="GET">
+                        <input type="hidden" name="download" value="' . $file . '">
                         <input type="submit" value="Download"></form>
                         </form></td>';
             }

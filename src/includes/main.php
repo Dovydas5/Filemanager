@@ -4,8 +4,8 @@
     <?php echo tableContent($files, $path); ?>
 </table>
 <div class="nav">
-    <a href="<?php echo trimLastDir($path)?>" class="nav">Back</a>
-    <a href="index.php" class="nav">Home</a>
+    <a href="<?php echo trimLastDir($path)?>" class="button">Back</a>
+    <a href="index.php" class="button">Home</a>
 </div>
 
 <form class="create" action="index.php" method="GET">
