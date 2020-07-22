@@ -1,4 +1,5 @@
 <?php
+session_start();
 const INCLUDES_PATH = __DIR__ . '/../public';
 
 require_once "../includes/function.php";
