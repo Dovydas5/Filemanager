@@ -19,6 +19,14 @@ Atsidarote naršyklę ir einate į
 ```bash
 http://127.0.0.1:8080
 ```
+### Kaip išjungti?
+
+```bash
+  $ cd path/to/<project>
+  $ docker-compose down
+```
+
+
 ### Dėl virtualizacijos įjungimo
 
 [Hyper-V įjungimas](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#enable-hyper-v-using-powershell)
