@@ -10,6 +10,8 @@ if(isset($_GET['download'])){
     header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
     header('Pragma: public');
     header('Content-Length: ' . filesize($file));
+    readfile($file);
+    exit();
 
 }
 
